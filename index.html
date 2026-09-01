@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Chris Gilpin — builder and entrepreneur. StoryKrafters, Mario Kart 8P, SilverIris." />
+  <title>Chris Gilpin · Good House Inc.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <p class="eyebrow">Good House Inc.</p>
+      <h1>Chris Gilpin</h1>
+      <p class="tagline">
+        Builder and entrepreneur. Past work includes Turnstyle (acquired by Yelp)
+        and OrderUp (acquired by Wealthsimple). Now shipping new products.
+      </p>
+      <nav class="social" aria-label="Social profiles">
+        <a href="https://www.linkedin.com/in/chris-gilpin-b5571b17" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+        <span class="dot" aria-hidden="true">·</span>
+        <a href="https://x.com/christophergilp" rel="noopener noreferrer" target="_blank">X</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
+        <ul class="project-list">
+          <li class="project">
+            <div class="project-top">
+              <h3>StoryKrafters</h3>
+              <span class="status">Live on iOS</span>
+            </div>
+            <p>AI-illustrated stories starring real people. Upload a photo, pick a theme, get a custom picture book.</p>
+            <div class="links">
+              <a href="https://apps.apple.com/us/app/storykrafters-custom-stories/id6769545734" rel="noopener noreferrer" target="_blank">App Store</a>
+              <a href="https://storykrafters.com" rel="noopener noreferrer" target="_blank">Website</a>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project-top">
+              <h3>Mario Kart 8P</h3>
+              <span class="status">Live · for fun</span>
+            </div>
+            <p>Mario Kart 64 recompiled for Mac with 8-player local multiplayer and a browser track editor. Requires your own legal US ROM.</p>
+            <div class="links">
+              <a href="https://github.com/chrisgilpin/MK64-8p-local" rel="noopener noreferrer" target="_blank">GitHub</a>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project-top">
+              <h3>SilverIris</h3>
+              <span class="status">In development</span>
+            </div>
+            <p>Browser-native GoldenEye 007 fan port. User-supplied legal NTSC-U ROM.</p>
+            <div class="links">
+              <a href="https://github.com/chrisgilpin/SilverIris" rel="noopener noreferrer" target="_blank">GitHub</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Good House Inc. · goodhouseinc.com</p>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
